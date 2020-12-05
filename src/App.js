@@ -4,11 +4,11 @@ import { useState } from 'react';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
 import TaskManger from './components/TaskManager/TaskManager';
 function App() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
     <PageWrapper withNavbar withSidebar sidebarType="overlayed-sm-and-down" isSidebarOpen={isSidebarOpen} toggle={() => {setIsSidebarOpen(!isSidebarOpen)}} withTransitions>
-      <Router>
+      <Router basename="/bettertodos">
       <div className="sidebar-overlay" onClick={()=>{setIsSidebarOpen(!isSidebarOpen)}}></div>
       <Navbar>
         <NavbarContent>
@@ -23,8 +23,8 @@ function App() {
           <SidebarBrand>
           </SidebarBrand>
         </SidebarMenu>
-        <SidebarItem><Link to="/">Due Tasks</Link></SidebarItem>
-        <SidebarItem><Link to="/done">Completed Tasks</Link></SidebarItem>
+        <SidebarItem><Link to="/" onClick={()=>{setIsSidebarOpen(false)}}>Due Tasks</Link></SidebarItem>
+        <SidebarItem><Link to="/done" onClick={()=>{setIsSidebarOpen(false)}}>Completed Tasks</Link></SidebarItem>
       </Sidebar>
       <ContentWrapper>
         <TaskManger />
