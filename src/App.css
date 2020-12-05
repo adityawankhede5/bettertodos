@@ -1,0 +1,17 @@
+@import url("https://cdn.jsdelivr.net/npm/halfmoon@1.1.0/css/halfmoon.min.css");
+textarea{
+    resize: none;
+}
+.deadline-option{
+    border: 1px solid lightgray;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.5;
+    font-weight: bold;
+}
+.deadline-option-selected{
+    opacity: 1;
+    color: white;
+    background-color: black;
+}
