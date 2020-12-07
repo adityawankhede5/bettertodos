@@ -1,5 +1,5 @@
 import './App.css';
-import { Button, ContentWrapper, Navbar, NavbarBrand, NavbarContent, PageWrapper, Sidebar, SidebarBrand, SidebarItem, SidebarMenu } from 'reacthalfmoon';
+import { Button, ContentWrapper, Navbar, NavbarBrand, NavbarContent, PageWrapper, Sidebar, SidebarBrand, SidebarDivider, SidebarItem, SidebarMenu, SidebarTitle } from 'reacthalfmoon';
 import { useState } from 'react';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
 import TaskManger from './components/TaskManager/TaskManager';
@@ -23,6 +23,8 @@ function App() {
           <SidebarBrand>
           </SidebarBrand>
         </SidebarMenu>
+        <SidebarTitle style={{fontWeight: 'bold', fontSize: '1.4em'}}>Tasks</SidebarTitle>
+        <SidebarDivider />
         <SidebarItem><Link to="/" onClick={()=>{setIsSidebarOpen(false)}}>Due Tasks</Link></SidebarItem>
         <SidebarItem><Link to="/done" onClick={()=>{setIsSidebarOpen(false)}}>Completed Tasks</Link></SidebarItem>
       </Sidebar>

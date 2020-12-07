@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import {  Container, Content, Row } from "reacthalfmoon";
+import {  Container, Content, Row, Col } from "reacthalfmoon";
 import { Route, Switch } from 'react-router-dom';
 import NewTask from "./NewTask";
 import DueTasks from "./DueTasks";
@@ -44,10 +44,16 @@ function TaskManger() {
                         <NewTask insertTask={insertTask} />
                     </Row>
                     <Row>
+                        <Col size={12} style={{fontWeight: 'bold', fontSize: '1.5em', marginTop: '10px'}}>Due Tasks</Col>
+                    </Row>
+                    <Row>
                         <DueTasks tasks={tasks} deleteTask={deleteTask} completeTask={completeTask} />
                     </Row>
                 </Route>
                 <Route path="/done">
+                    <Row>
+                        <Col size={12} style={{fontWeight: 'bold', fontSize: '1.5em', marginTop: '10px'}}>Completed Tasks</Col>
+                    </Row>
                     <Row>
                         <CompletedTasks tasks={tasks} deleteTask={deleteTask} />
                     </Row>
