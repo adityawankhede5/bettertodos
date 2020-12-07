@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/bettertodos/static/css/main.a622a0a4.chunk.css",
-    "main.js": "/bettertodos/static/js/main.8f0f7ea5.chunk.js",
-    "main.js.map": "/bettertodos/static/js/main.8f0f7ea5.chunk.js.map",
+    "main.js": "/bettertodos/static/js/main.bf127605.chunk.js",
+    "main.js.map": "/bettertodos/static/js/main.bf127605.chunk.js.map",
     "runtime-main.js": "/bettertodos/static/js/runtime-main.a0ab254a.js",
     "runtime-main.js.map": "/bettertodos/static/js/runtime-main.a0ab254a.js.map",
-    "static/js/2.4064d98b.chunk.js": "/bettertodos/static/js/2.4064d98b.chunk.js",
-    "static/js/2.4064d98b.chunk.js.map": "/bettertodos/static/js/2.4064d98b.chunk.js.map",
+    "static/js/2.e6c02bc3.chunk.js": "/bettertodos/static/js/2.e6c02bc3.chunk.js",
+    "static/js/2.e6c02bc3.chunk.js.map": "/bettertodos/static/js/2.e6c02bc3.chunk.js.map",
     "static/js/3.c81f3a54.chunk.js": "/bettertodos/static/js/3.c81f3a54.chunk.js",
     "static/js/3.c81f3a54.chunk.js.map": "/bettertodos/static/js/3.c81f3a54.chunk.js.map",
     "index.html": "/bettertodos/index.html",
     "static/css/main.a622a0a4.chunk.css.map": "/bettertodos/static/css/main.a622a0a4.chunk.css.map",
-    "static/js/2.4064d98b.chunk.js.LICENSE.txt": "/bettertodos/static/js/2.4064d98b.chunk.js.LICENSE.txt"
+    "static/js/2.e6c02bc3.chunk.js.LICENSE.txt": "/bettertodos/static/js/2.e6c02bc3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a0ab254a.js",
-    "static/js/2.4064d98b.chunk.js",
+    "static/js/2.e6c02bc3.chunk.js",
     "static/css/main.a622a0a4.chunk.css",
-    "static/js/main.8f0f7ea5.chunk.js"
+    "static/js/main.bf127605.chunk.js"
   ]
 }
